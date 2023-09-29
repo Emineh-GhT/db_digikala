@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/corses/python/code/digikala/database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="518"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainProducts"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="49"/><column index="3" value="59"/><column index="4" value="59"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="52"/><column index="3" value="60"/><column index="4" value="45"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO Customers
+VALUES (1, 'emineh' , 'mashhad' , 'iran');
+INSERT INTO Customers
+VALUES (2, 'sajjad' , 'mashhad' , 'iran');
+INSERT INTO Customers
+VALUES (3, 'asal' , 'mashhad' , 'iran');
+INSERT INTO Customers
+VALUES (4, 'mahtab' , 'washington DC' , 'US state');
+
+
+INSERT INTO Products
+VALUES (1, 'shampo' , 100000 , 20);
+INSERT INTO Products
+VALUES (2, 'chips' , 50000 , 90);
+INSERT INTO Products
+VALUES (3, 'gosht' , 600000 , 30);
+INSERT INTO Products
+VALUES (4, 'berenj' ,90000 , 0);
+
+SELECT * FROM Products WHERE count != 0;
+
+DELETE FROM Customers WHERE country != 'iran';
+
+UPDATE Products
+set price = price - (price*0.2);
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
